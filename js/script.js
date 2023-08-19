@@ -38,5 +38,6 @@ function showList(array) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   const onlyStrings = strangeArray.filter(item => typeof item === 'string')
-  showList(onlyStrings);
+  
+  showList(onlyStrings.sort());
 });
